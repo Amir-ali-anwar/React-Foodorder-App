@@ -1,18 +1,18 @@
-import cartcontext from "./cartContext";
+// import cartcontext from "./cartContext";
 
-const CartProvider=props=>{
-   const addCartItem=item=>{
+// const CartProvider=props=>{
+//    const addCartItem=item=>{
     
-   }
-   const RemoveCartItem=id=>{
+//    }
+//    const RemoveCartItem=id=>{
     
-}
-    cartcontext={
-        Items:[],
-        totalAmount:0,
-        addItem:totalAmount,
-        removeItem:RemoveCartItem
-    }
+// }
+//     cartcontext={
+//         Items:[],
+//         totalAmount:0,
+//         addItem:totalAmount,
+//         removeItem:RemoveCartItem
+//     }
 
-}
-export default CartProvider
+// }
+// export default CartProvider

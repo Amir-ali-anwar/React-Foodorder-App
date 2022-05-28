@@ -1,9 +1,14 @@
-import React from 'react';
+import React from "react";
 
-const cartcontext=React.createContext({
-    Items:[],
-    totalAmount: 0,
-    addItem: (item) => {},
-    removeItem: (id) => {}
-})
-export default cartcontext
+const initialState = {
+  Items: [],
+  totalAmount: 0,
+  addItem: (item) => {},
+  removeItem: (id) => {},
+};
+const cartcontext = React.createContext();
+export const CartProvider = ({ children }) => {
+  const [state, dispatch] = React.useReducer(reducer, initialState);
+  return <cartcontext.Provider value={{}}>{children}</cartcontext.Provider>;
+};
+
