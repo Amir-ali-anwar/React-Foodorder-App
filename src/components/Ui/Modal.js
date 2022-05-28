@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import ReactDom from "react-dom";
 import Classes from "./Modal.module.css";
 const BackDrop = (props) => {
-  return <div className={Classes.backDrop} onClick={props.onClose}></div>;
+  return <div className={Classes.backdrop} onClick={props.onClose}/>;
 };
 const ModalOverlay = (props) => {
   return (
