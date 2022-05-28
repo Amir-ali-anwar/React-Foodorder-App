@@ -1,9 +1,7 @@
 import React,{Fragment} from 'react'
 import CartIcon from '../Cart/CartIcon'
 import Classes from './HeaderCartButtton.module.css'
-import CartContext from '../../store/cartContext'
 const HeaderCartButtton = (props) => {
-  const cartconext= React.useContext(CartContext);
   const NumberofCartItems= cartconext.Items.reduce((total, item)=>{
     return total+=item.totalAmount
   },0)
