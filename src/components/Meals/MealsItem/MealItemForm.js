@@ -1,10 +1,10 @@
 import React from 'react'
-import classes from './MealsItemForm.module.css'
-const MealItemForm = () => {
+import classes from './MealItemForm.module.css'
+const MealItemForm = (props) => {
   return (
     <form className={classes.form}>
         <input type="text" />
-        <button></button>
+        <button>+Add</button>
     </form>
   )
 }

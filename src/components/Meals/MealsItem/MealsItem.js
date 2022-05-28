@@ -1,6 +1,6 @@
 import React from 'react'
 import MealItemForm from './MealItemForm'
-import Classes from './MealsItem.module.css'
+import Classes from './MealItemForm.module.css'
 const MealsItem = (props) => {
     const Price= `$${props.price.toFixed(2)}`
   return (
