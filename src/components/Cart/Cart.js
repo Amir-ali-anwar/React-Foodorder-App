@@ -1,9 +1,10 @@
 import React from 'react'
-import classes from  './cart.module.css'
+import Modal from '../UI/Modal'
+import classes from  './Cart.module.css'
 const Cart = () => {
-const cartItem=[{id:"c1",name:'amir',ammount:2,price:12}].map((item)=><li>{item.name}</li>)
+const cartItem=[{id:"c1",name:'amir',ammount:2,price:12}].map((item)=><li key={item.id}>{item.name}</li>)
   return (
-    <div>
+    <Modal>
         {cartItem}
         <div className={classes.total}>
             <span>Total Amount</span>
@@ -13,7 +14,7 @@ const cartItem=[{id:"c1",name:'amir',ammount:2,price:12}].map((item)=><li>{item.
             <button className={classes['button-alt']}>Close</button>
             <button className={classes.order}>Order</button>
         </div>
-    </div>
+    </Modal>
   )
 }
 
