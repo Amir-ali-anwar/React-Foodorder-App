@@ -1,6 +1,6 @@
 import React from "react";
 import MealItemForm from "./MealItemForm";
-import Classes from "./MealItemForm.module.css";
+import Classes from "./MealsItem.module.css";
 const MealsItem = ({ name, description, price }) => {
   const Price = `$${price.toFixed(2)}`;
   return (
