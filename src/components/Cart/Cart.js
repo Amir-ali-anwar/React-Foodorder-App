@@ -2,7 +2,7 @@ import React from "react";
 import Modal from "../UI/Modal";
 import classes from "./Cart.module.css";
 import CartItem from "./CartItem";
-import {useCartContext} from '../../Hooks/CartHook'
+import { useCartContext } from "../../Hooks/CartHook";
 
 const Cart = (props) => {
   const Cartctx = useCartContext();
