@@ -1,8 +1,11 @@
 import React from "react";
 import MealItemForm from "./MealItemForm";
 import Classes from "./MealsItem.module.css";
+import {CartContext} from '../../../Hooks/index'
 const MealsItem = ({ name, description, price }) => {
+// console.log(useCartContext())
   const Price = `$${price.toFixed(2)}`;
+
   return (
     <li className={Classes.meal}>
       <div>

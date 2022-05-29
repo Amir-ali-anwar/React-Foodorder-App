@@ -1,6 +1,5 @@
-import React from 'react';
-import { CartContext } from "../store/cartContext";
+import CartHook from './Carthook'
 
-export default useCartContext=()=>{
-    return React.useContext(CartContext)
+export  default{ 
+    CartHook
 }

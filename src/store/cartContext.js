@@ -4,7 +4,7 @@ const initialState = {
   Items: [],
   totalAmount: 0,
 };
-const cartcontext = React.createContext();
+const CartContext = React.createContext();
 export const CartProvider = ({ children }) => {
   const [state,dispatch]=React.useReducer(reducer,initialState)
   const addItemToCart=(item)=>{
@@ -13,6 +13,8 @@ export const CartProvider = ({ children }) => {
   const RemoveItemFromCart=(id)=>{
     dispatch({type:'remove',payload:id})
   }
-  return <cartcontext.Provider value={{addItemToCart,RemoveItemFromCart}}>{children}</cartcontext.Provider>;
+  return <CartContext.Provider value={{addItemToCart,RemoveItemFromCart}}>{children}</CartContext.Provider>;
 };
 
+
+export default CartContext
