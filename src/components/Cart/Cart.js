@@ -2,12 +2,10 @@ import React from "react";
 import Modal from "../UI/Modal";
 import classes from "./Cart.module.css";
 import CartItem from "./CartItem";
-import CartContext from "../../store/cartContext";
+import {useCartContext} from '../../Hooks/CartHook'
 
 const Cart = (props) => {
-  const Cartctx = React.useContext(CartContext);
-  console.log(Cartctx);
-
+  const Cartctx = useCartContext();
   const totalAmount = `$${Cartctx.state.totalAmount.toFixed(2)}`;
   const hasItems = Cartctx.state.Items.length > 0;
   const cartItems = (
